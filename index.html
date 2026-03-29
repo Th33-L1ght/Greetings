@@ -7,7 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-
 body {
   min-height:100vh;
   display:flex;
@@ -22,39 +21,32 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-
-/* bonsai watermark */
 body::before {
   content:'';
   position:fixed;
   bottom:0; left:50%;
   transform:translateX(-50%);
   width:340px; height:340px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 340'%3E%3C!-- trunk --%3E%3Cpath d='M170 330 Q165 280 158 240 Q150 200 145 170 Q140 140 150 110' stroke='%23688a40' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q130 80 100 60' stroke='%23688a40' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q165 75 170 50' stroke='%23688a40' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q175 95 200 85' stroke='%23688a40' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M155 160 Q125 150 95 155' stroke='%23688a40' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M158 200 Q185 185 210 178' stroke='%23688a40' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C!-- foliage clouds --%3E%3Cellipse cx='100' cy='55' rx='38' ry='28' fill='%2390b860' opacity='0.55'/%3E%3Cellipse cx='72' cy='68' rx='25' ry='20' fill='%23a0c468' opacity='0.5'/%3E%3Cellipse cx='128' cy='48' rx='28' ry='22' fill='%2398c060' opacity='0.5'/%3E%3Cellipse cx='170' cy='44' rx='34' ry='26' fill='%2390b860' opacity='0.55'/%3E%3Cellipse cx='148' cy='56' rx='22' ry='18' fill='%23a8cc70' opacity='0.45'/%3E%3Cellipse cx='196' cy='52' rx='26' ry='20' fill='%2398c060' opacity='0.5'/%3E%3Cellipse cx='200' cy='78' rx='22' ry='16' fill='%2390b860' opacity='0.45'/%3E%3Cellipse cx='95' cy='150' rx='30' ry='22' fill='%2390b860' opacity='0.48'/%3E%3Cellipse cx='70' cy='162' rx='20' ry='16' fill='%23a0c468' opacity='0.42'/%3E%3Cellipse cx='118' cy='144' rx='22' ry='17' fill='%2398c060' opacity='0.44'/%3E%3Cellipse cx='210' cy='172' rx='28' ry='20' fill='%2390b860' opacity='0.46'/%3E%3Cellipse cx='232' cy='185' rx='20' ry='15' fill='%23a0c468' opacity='0.4'/%3E%3C!-- pot --%3E%3Cpath d='M148 330 L152 300 L188 300 L192 330 Z' fill='%23b07840' opacity='0.6'/%3E%3Cellipse cx='170' cy='300' rx='20' ry='6' fill='%23c08848' opacity='0.6'/%3E%3Cellipse cx='170' cy='330' rx='24' ry='7' fill='%23a06830' opacity='0.6'/%3E%3C/svg%3E") no-repeat center bottom;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 340'%3E%3Cpath d='M170 330 Q165 280 158 240 Q150 200 145 170 Q140 140 150 110' stroke='%23688a40' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q130 80 100 60' stroke='%23688a40' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q165 75 170 50' stroke='%23688a40' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 110 Q175 95 200 85' stroke='%23688a40' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M155 160 Q125 150 95 155' stroke='%23688a40' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M158 200 Q185 185 210 178' stroke='%23688a40' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cellipse cx='100' cy='55' rx='38' ry='28' fill='%2390b860' opacity='0.55'/%3E%3Cellipse cx='72' cy='68' rx='25' ry='20' fill='%23a0c468' opacity='0.5'/%3E%3Cellipse cx='128' cy='48' rx='28' ry='22' fill='%2398c060' opacity='0.5'/%3E%3Cellipse cx='170' cy='44' rx='34' ry='26' fill='%2390b860' opacity='0.55'/%3E%3Cellipse cx='148' cy='56' rx='22' ry='18' fill='%23a8cc70' opacity='0.45'/%3E%3Cellipse cx='196' cy='52' rx='26' ry='20' fill='%2398c060' opacity='0.5'/%3E%3Cellipse cx='200' cy='78' rx='22' ry='16' fill='%2390b860' opacity='0.45'/%3E%3Cellipse cx='95' cy='150' rx='30' ry='22' fill='%2390b860' opacity='0.48'/%3E%3Cellipse cx='70' cy='162' rx='20' ry='16' fill='%23a0c468' opacity='0.42'/%3E%3Cellipse cx='118' cy='144' rx='22' ry='17' fill='%2398c060' opacity='0.44'/%3E%3Cellipse cx='210' cy='172' rx='28' ry='20' fill='%2390b860' opacity='0.46'/%3E%3Cellipse cx='232' cy='185' rx='20' ry='15' fill='%23a0c468' opacity='0.4'/%3E%3Cpath d='M148 330 L152 300 L188 300 L192 330 Z' fill='%23b07840' opacity='0.6'/%3E%3Cellipse cx='170' cy='300' rx='20' ry='6' fill='%23c08848' opacity='0.6'/%3E%3Cellipse cx='170' cy='330' rx='24' ry='7' fill='%23a06830' opacity='0.6'/%3E%3C/svg%3E") no-repeat center bottom;
   background-size: contain;
   opacity: 0.18;
   pointer-events: none;
   z-index: 0;
 }
-
 body > * { position: relative; z-index: 1; }
-
 h1 {
   font-size:0.7rem;
   letter-spacing:0.44em;
   color:rgba(42,58,26,0.5);
   font-weight:400;
   text-transform:uppercase;
-  font-family:'EB Garamond', Georgia, serif;
 }
-
 .buttons {
   display:flex;
   gap:0.6rem;
   flex-wrap:wrap;
   justify-content:center;
 }
-
 button {
   background: rgba(255,255,255,0.45);
   border: 1px solid rgba(80,110,40,0.3);
@@ -67,13 +59,11 @@ button {
   letter-spacing:0.04em;
   border-radius:3px;
 }
-
 button:hover {
   background: rgba(255,255,255,0.7);
   border-color: rgba(80,110,40,0.6);
   color: #1a3008;
 }
-
 .personalise-toggle {
   font-size:0.78rem;
   opacity:0.5;
@@ -82,7 +72,6 @@ button:hover {
   background:transparent;
 }
 .personalise-toggle:hover { opacity:1; }
-
 .personalise-panel {
   display:none;
   flex-direction:column;
@@ -94,7 +83,6 @@ button:hover {
   border-radius:4px;
 }
 .personalise-panel.open { display:flex; }
-
 .personalise-panel label {
   font-size:0.68rem;
   letter-spacing:0.16em;
@@ -103,7 +91,6 @@ button:hover {
   margin-bottom:0.18rem;
   display:block;
 }
-
 .personalise-panel input {
   background:rgba(255,255,255,0.6);
   border:1px solid rgba(80,110,40,0.2);
@@ -117,7 +104,6 @@ button:hover {
 }
 .personalise-panel input:focus { border-color:rgba(80,110,40,0.5); }
 .personalise-panel input::placeholder { color:rgba(42,58,26,0.3); }
-
 .card-wrap {
   display:none;
   flex-direction:column;
@@ -128,17 +114,14 @@ button:hover {
 }
 .card-wrap.visible { display:flex; }
 .card-wrap.shown { opacity:1; }
-
 canvas {
   border-radius:8px;
   display:block;
   box-shadow:0 12px 44px rgba(0,0,0,0.22);
-  /* display at CSS size, drawn at 2x for sharpness */
-  width: 380px;
-  height: 380px;
+  width:380px;
+  height:380px;
 }
-
-.card-actions { display:flex; gap:0.65rem; }
+.card-actions { display:flex; gap:0.65rem; flex-wrap:wrap; justify-content:center; }
 </style>
 </head>
 <body>
@@ -155,11 +138,11 @@ canvas {
 
 <div class="personalise-panel" id="panel">
   <div>
-    <label>Friend's name or nickname</label>
+    <label>Their name or nickname</label>
     <input id="nickname" type="text" placeholder="e.g. Fatima">
   </div>
   <div>
-    <label>A word that describes her</label>
+    <label>A word that describes them</label>
     <input id="adjective" type="text" placeholder="e.g. radiant">
   </div>
   <div>
@@ -172,12 +155,12 @@ canvas {
   <canvas id="canvas"></canvas>
   <div class="card-actions">
     <button onclick="generate(currentType)">Regenerate</button>
+    <button onclick="shareCard()">Share</button>
     <button onclick="downloadCard()">Download</button>
   </div>
 </div>
 
 <script>
-/* ── DPI FIX: draw at devicePixelRatio, display at CSS 380×380 ── */
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const DPR = window.devicePixelRatio || 1;
@@ -207,6 +190,10 @@ function makeMessage(type){
     type==="day"     ? "Good day" + name + "."     :
                        "Good evening" + name + ".";
 
+  function adj(withAdj, fallback){
+    return adjective ? withAdj.replace("__ADJ__", adjective) : fallback;
+  }
+
   let line2, line3;
 
   if(type==="morning"){
@@ -223,13 +210,13 @@ function makeMessage(type){
       "Hope the morning greets you kindly today.",
     ]);
     line3 = r([
-      adjective ? `You are ${adjective} — don't forget that today.` : "You are more loved than you know.",
+      adj("You are __ADJ__ — don't forget that today.", "You are more loved than you know."),
       "Take it one moment at a time.",
       "No rush. The day is yours.",
       "Breathe first. Everything else can wait.",
       "A warm cup and a quiet moment — that's a good start.",
       "Let today be lighter than yesterday.",
-      adjective ? `Someone ${adjective} deserves a wonderful morning.` : "Someone wonderful deserves a wonderful morning.",
+      adj("Someone __ADJ__ deserves a wonderful morning.", "Someone wonderful deserves a wonderful morning."),
       "You've already done the hard part — you showed up.",
       "Be easy with yourself today.",
       "Whatever today brings, you can handle it.",
@@ -248,13 +235,13 @@ function makeMessage(type){
       "Hope today has held more good than hard.",
     ]);
     line3 = r([
-      adjective ? `You are ${adjective} and the world is better for it.` : "You matter more than you realise.",
+      adj("You are __ADJ__ and the world is better for it.", "You matter more than you realise."),
       "Be gentle with yourself today.",
       "One thing at a time — you've got it.",
       "Don't forget to drink some water.",
       "Even ordinary days can hold a little magic.",
       "Take a breath. You are doing fine.",
-      adjective ? `Stay ${adjective}. The world needs it.` : "Stay kind to yourself today.",
+      adj("Stay __ADJ__. The world needs it.", "Stay kind to yourself today."),
       "You are doing better than you think.",
       "A little kindness goes a long way — including to yourself.",
     ]);
@@ -272,39 +259,34 @@ function makeMessage(type){
       "Rest belongs to you tonight.",
     ]);
     line3 = r([
-      adjective ? `You are ${adjective} — even on the hard days.` : "You did well today, even if it didn't feel like it.",
+      adj("You are __ADJ__ — even on the hard days.", "You did well today, even if it didn't feel like it."),
       "Sweet dreams when you get there.",
       "May your sleep be deep and kind.",
       "Tomorrow can wait. Rest now.",
       "You are allowed to rest without guilt.",
       "Close your eyes knowing you are loved.",
-      adjective ? `Someone ${adjective} deserves a peaceful night.` : "Someone wonderful deserves a peaceful night.",
+      adj("Someone __ADJ__ deserves a peaceful night.", "Someone wonderful deserves a peaceful night."),
       "Put it all down. It will keep until morning.",
       "The world is quieter now. So can you be.",
     ]);
   }
 
   return {
-    greeting,
-    line2,
-    line3,
+    greeting, line2, line3,
     from: sender ? (type==="evening" ? "Goodnight from " + sender : "With love, " + sender) : ""
   };
 }
 
 /* ═══════════════════════════════════════════
    TEXT DRAWING
-   — Georgia fallback, NO shadow, NO blur
-   — DPR-aware sizes (we already scaled ctx)
 ═══════════════════════════════════════════ */
 function drawText(msg, dark){
   const W=SIZE, H=SIZE;
-  const textColor = dark ? "#ffffff"              : "#1a1208";
-  const subColor  = dark ? "rgba(255,255,255,0.92)": "rgba(20,12,4,0.82)";
-  const fromColor = dark ? "rgba(255,255,255,0.65)": "rgba(20,12,4,0.5)";
+  const textColor = dark ? "#ffffff"                : "#1a1208";
+  const subColor  = dark ? "rgba(255,255,255,0.92)"  : "rgba(20,12,4,0.82)";
+  const fromColor = dark ? "rgba(255,255,255,0.65)"  : "rgba(20,12,4,0.5)";
 
-  /* crisp darkening strip — no blur */
-  const ov = ctx.createLinearGradient(0, H*0.18, 0, H);
+  const ov=ctx.createLinearGradient(0,H*0.18,0,H);
   if(dark){
     ov.addColorStop(0,"rgba(0,0,0,0)");
     ov.addColorStop(0.5,"rgba(0,0,0,0.28)");
@@ -314,83 +296,59 @@ function drawText(msg, dark){
     ov.addColorStop(1,"rgba(255,255,255,0.48)");
   }
   ctx.fillStyle=ov; ctx.fillRect(0,0,W,H);
+  ctx.shadowBlur=0; ctx.shadowColor="transparent";
+  ctx.textAlign="center"; ctx.textBaseline="top";
 
-  ctx.shadowBlur   = 0;
-  ctx.shadowColor  = "transparent";
-  ctx.textAlign    = "center";
-  ctx.textBaseline = "top";
+  const cx=W/2, maxW=330;
+  const F_GREET=`bold 28px Georgia,'Times New Roman',serif`;
+  const F_WISH =`24px Georgia,'Times New Roman',serif`;
+  const F_EXTRA=`italic 22px Georgia,'Times New Roman',serif`;
+  const F_FROM =`italic 18px Georgia,'Times New Roman',serif`;
+  const LH_GREET=36,LH_WISH=32,LH_EXTRA=30,LH_FROM=26;
+  const GAP_AFTER_GREET=22, GAP_BETWEEN=14;
 
-  const cx   = W/2;
-  const maxW = 330;
-
-  /* font definitions */
-  const F_GREET = `bold 28px Georgia,'Times New Roman',serif`;
-  const F_WISH  = `24px Georgia,'Times New Roman',serif`;
-  const F_EXTRA = `italic 22px Georgia,'Times New Roman',serif`;
-  const F_FROM  = `italic 18px Georgia,'Times New Roman',serif`;
-
-  const LH_GREET = 36;
-  const LH_WISH  = 32;
-  const LH_EXTRA = 30;
-  const LH_FROM  = 26;
-
-  const GAP_AFTER_GREET = 20;  /* big breath after greeting */
-  const GAP_BETWEEN     = 12;
-
-  /* measure how many px a wrapped block takes */
-  function blockH(text, font, lh){
-    ctx.font = font;
-    const words = text.split(" ");
-    let line="", lines=1;
+  function blockH(text,font,lh){
+    ctx.font=font;
+    const words=text.split(" "); let line="",lines=1;
     for(let i=0;i<words.length;i++){
       const test=line+words[i]+" ";
-      if(ctx.measureText(test).width>maxW && i>0){ lines++; line=words[i]+" "; }
-      else line=test;
+      if(ctx.measureText(test).width>maxW&&i>0){lines++;line=words[i]+" ";}else line=test;
     }
     return lines*lh;
   }
 
-  const h1 = blockH(msg.greeting, F_GREET, LH_GREET);
-  const h2 = blockH(msg.line2,    F_WISH,  LH_WISH);
-  const h3 = blockH(msg.line3,    F_EXTRA, LH_EXTRA);
-  const h4 = msg.from ? blockH(msg.from, F_FROM, LH_FROM) : 0;
+  const h1=blockH(msg.greeting,F_GREET,LH_GREET);
+  const h2=blockH(msg.line2,F_WISH,LH_WISH);
+  const h3=blockH(msg.line3,F_EXTRA,LH_EXTRA);
+  const h4=msg.from?blockH(msg.from,F_FROM,LH_FROM):0;
+  const totalH=h1+GAP_AFTER_GREET+h2+GAP_BETWEEN+h3+(h4?GAP_BETWEEN+h4:0);
+  let y=Math.max(24,H/2-totalH/2);
 
-  const totalH = h1 + GAP_AFTER_GREET + h2 + GAP_BETWEEN + h3 + (h4 ? GAP_BETWEEN + h4 : 0);
-  let y = Math.max(24, H/2 - totalH/2);
-
-  /* draw one wrapped block, return new y */
-  function drawBlock(text, font, lh, color){
-    ctx.font      = font;
-    ctx.fillStyle = color;
-    const words=text.split(" ");
-    let line="";
-    let cy=y;
+  function drawBlock(text,font,lh,color){
+    ctx.font=font; ctx.fillStyle=color;
+    const words=text.split(" "); let line="",cy=y;
     for(let i=0;i<words.length;i++){
       const test=line+words[i]+" ";
-      if(ctx.measureText(test).width>maxW && i>0){
-        ctx.fillText(line.trim(),cx,cy);
-        line=words[i]+" ";
-        cy+=lh;
+      if(ctx.measureText(test).width>maxW&&i>0){
+        ctx.fillText(line.trim(),cx,cy); line=words[i]+" "; cy+=lh;
       } else line=test;
     }
     ctx.fillText(line.trim(),cx,cy);
     return cy+lh;
   }
 
-  y = drawBlock(msg.greeting, F_GREET, LH_GREET, textColor);
-  y += GAP_AFTER_GREET;
-  y = drawBlock(msg.line2,    F_WISH,  LH_WISH,  subColor);
-  y += GAP_BETWEEN;
-  y = drawBlock(msg.line3,    F_EXTRA, LH_EXTRA, subColor);
-  if(msg.from){
-    y += GAP_BETWEEN + 4;
-    drawBlock(msg.from, F_FROM, LH_FROM, fromColor);
-  }
+  y=drawBlock(msg.greeting,F_GREET,LH_GREET,textColor);
+  y+=GAP_AFTER_GREET;
+  y=drawBlock(msg.line2,F_WISH,LH_WISH,subColor);
+  y+=GAP_BETWEEN;
+  y=drawBlock(msg.line3,F_EXTRA,LH_EXTRA,subColor);
+  if(msg.from){ y+=GAP_BETWEEN+4; drawBlock(msg.from,F_FROM,LH_FROM,fromColor); }
 }
 
 /* ═══════════════════════════════════════════
-   MORNING SCENES
+   MORNING / DAY SCENES
 ═══════════════════════════════════════════ */
+
 function drawSunrise(){
   const g=ctx.createLinearGradient(0,0,0,SIZE);
   g.addColorStop(0,"#1a0a2e"); g.addColorStop(0.35,"#7a1a4a");
@@ -518,8 +476,7 @@ function drawGoldenWheat(){
   ctx.fillStyle="#ffe860"; ctx.beginPath(); ctx.arc(60,80,22,0,Math.PI*2); ctx.fill();
   ctx.strokeStyle="#c8901a"; ctx.lineWidth=1.5;
   for(let i=0;i<40;i++){
-    const sx=rand(0,SIZE),bend=rand(-18,18);
-    const topY=SIZE-rand(120,180);
+    const sx=rand(0,SIZE),bend=rand(-18,18),topY=SIZE-rand(120,180);
     ctx.beginPath(); ctx.moveTo(sx,SIZE); ctx.quadraticCurveTo(sx+bend,SIZE-rand(60,120),sx+bend*1.5,topY); ctx.stroke();
     ctx.fillStyle=`rgba(210,160,30,${rand(0.6,1)})`;
     ctx.beginPath(); ctx.ellipse(sx+bend*1.5,topY,3,9,rand(-0.3,0.3),0,Math.PI*2); ctx.fill();
@@ -550,19 +507,15 @@ function drawCherryBlossom(){
   return false;
 }
 
-/* NEW: snowflakes — morning/day winter */
 function drawSnowflakes(){
   const g=ctx.createLinearGradient(0,0,0,SIZE);
   g.addColorStop(0,"#c8dff0"); g.addColorStop(0.5,"#deeef8"); g.addColorStop(1,"#eef6ff");
   ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
-  /* pale sun */
   ctx.fillStyle="rgba(255,240,200,0.55)"; ctx.beginPath(); ctx.arc(300,70,55,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="rgba(255,245,215,0.8)"; ctx.beginPath(); ctx.arc(300,70,34,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="#fffde8"; ctx.beginPath(); ctx.arc(300,70,18,0,Math.PI*2); ctx.fill();
-  /* snow ground */
   ctx.fillStyle="#eef6ff";
   ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(80,SIZE-28,200,SIZE-18,SIZE,SIZE-24); ctx.lineTo(SIZE,SIZE); ctx.fill();
-  /* snowflakes */
   function snowflake(x,y,r,alpha){
     ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle="#d0e8f8"; ctx.lineWidth=1;
     ctx.translate(x,y);
@@ -575,41 +528,34 @@ function drawSnowflakes(){
     ctx.restore();
   }
   for(let i=0;i<28;i++) snowflake(rand(5,375),rand(5,340),rand(5,16),rand(0.35,0.9));
-  /* drifting dots */
   for(let i=0;i<40;i++){
     ctx.fillStyle=`rgba(210,230,248,${rand(0.3,0.8)})`; ctx.beginPath(); ctx.arc(rand(0,SIZE),rand(0,SIZE),rand(1,3),0,Math.PI*2); ctx.fill();
   }
   return false;
 }
 
-/* NEW: cute raindrops */
 function drawRaindrops(){
   const g=ctx.createLinearGradient(0,0,0,SIZE);
   g.addColorStop(0,"#8aa8c8"); g.addColorStop(0.5,"#a8c0d8"); g.addColorStop(1,"#c0d4e8");
   ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
-  /* clouds */
   ctx.fillStyle="rgba(230,238,248,0.88)";
   [[90,60,75,28],[220,45,90,30],[330,70,60,24],[160,90,55,20]].forEach(([cx,cy,rx,ry])=>{
     ctx.beginPath(); ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2); ctx.fill();
     ctx.beginPath(); ctx.ellipse(cx-rx*0.35,cy+ry*0.5,rx*0.58,ry*0.7,0,0,Math.PI*2); ctx.fill();
     ctx.beginPath(); ctx.ellipse(cx+rx*0.35,cy+ry*0.5,rx*0.58,ry*0.7,0,0,Math.PI*2); ctx.fill();
   });
-  /* cute teardrop raindrops */
   function raindrop(x,y,h,alpha){
-    ctx.save(); ctx.globalAlpha=alpha;
-    ctx.fillStyle="#6898c8";
+    ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle="#6898c8";
     ctx.beginPath();
     ctx.moveTo(x,y);
-    ctx.bezierCurveTo(x+h*0.45,y+h*0.55, x+h*0.45,y+h*0.9, x,y+h);
-    ctx.bezierCurveTo(x-h*0.45,y+h*0.9, x-h*0.45,y+h*0.55, x,y);
+    ctx.bezierCurveTo(x+h*0.45,y+h*0.55,x+h*0.45,y+h*0.9,x,y+h);
+    ctx.bezierCurveTo(x-h*0.45,y+h*0.9,x-h*0.45,y+h*0.55,x,y);
     ctx.fill();
-    /* shine */
     ctx.fillStyle="rgba(255,255,255,0.4)";
     ctx.beginPath(); ctx.ellipse(x-h*0.1,y+h*0.25,h*0.1,h*0.18,rand(-0.3,0.3),0,Math.PI*2); ctx.fill();
     ctx.restore();
   }
   for(let i=0;i<35;i++) raindrop(rand(5,375),rand(100,350),rand(8,20),rand(0.4,0.9));
-  /* ground puddle */
   ctx.fillStyle="rgba(100,160,210,0.28)";
   ctx.beginPath(); ctx.ellipse(190,370,160,14,0,0,Math.PI*2); ctx.fill();
   ctx.strokeStyle="rgba(130,180,220,0.5)"; ctx.lineWidth=1;
@@ -620,9 +566,228 @@ function drawRaindrops(){
   return false;
 }
 
+/* NEW MORNING/DAY SCENES */
+
+function drawHotAirBalloons(){
+  // soft misty morning hills with balloons drifting up
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#c8dff5"); g.addColorStop(0.5,"#ddeef8"); g.addColorStop(0.75,"#e8f4e8"); g.addColorStop(1,"#c0d8b0");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // layered misty hills
+  [[0.75,"rgba(160,200,150,0.35)"],[0.82,"rgba(130,175,120,0.45)"],[0.9,"rgba(100,150,90,0.6)"]].forEach(([yf,col])=>{
+    ctx.fillStyle=col; ctx.beginPath(); ctx.moveTo(0,SIZE);
+    ctx.bezierCurveTo(rand(40,100),SIZE*yf,rand(120,200),SIZE*yf-rand(10,25),rand(200,260),SIZE*yf);
+    ctx.bezierCurveTo(rand(260,320),SIZE*yf+rand(5,15),rand(320,380),SIZE*yf-rand(5,20),SIZE,SIZE*yf+rand(0,10));
+    ctx.lineTo(SIZE,SIZE); ctx.fill();
+  });
+  // soft sun haze
+  const sg=ctx.createRadialGradient(300,60,10,300,60,120);
+  sg.addColorStop(0,"rgba(255,240,180,0.4)"); sg.addColorStop(1,"rgba(255,240,180,0)");
+  ctx.fillStyle=sg; ctx.fillRect(0,0,SIZE,SIZE);
+  // balloons
+  function balloon(bx,by,scale,col1,col2){
+    ctx.save(); ctx.globalAlpha=0.88;
+    // envelope — smooth blob not geometric
+    const eg=ctx.createRadialGradient(bx,by-10*scale,2*scale,bx,by,28*scale);
+    eg.addColorStop(0,col1); eg.addColorStop(1,col2);
+    ctx.fillStyle=eg;
+    ctx.beginPath();
+    ctx.moveTo(bx,by-32*scale);
+    ctx.bezierCurveTo(bx+22*scale,by-32*scale,bx+28*scale,by-8*scale,bx+18*scale,by+8*scale);
+    ctx.bezierCurveTo(bx+10*scale,by+18*scale,bx-10*scale,by+18*scale,bx-18*scale,by+8*scale);
+    ctx.bezierCurveTo(bx-28*scale,by-8*scale,bx-22*scale,by-32*scale,bx,by-32*scale);
+    ctx.fill();
+    // panel lines — soft curves
+    ctx.strokeStyle="rgba(0,0,0,0.08)"; ctx.lineWidth=0.8*scale;
+    for(let p=-1;p<=1;p++){
+      ctx.beginPath();
+      ctx.moveTo(bx+p*9*scale,by-32*scale);
+      ctx.bezierCurveTo(bx+p*12*scale,by-10*scale,bx+p*8*scale,by+5*scale,bx+p*6*scale,by+14*scale);
+      ctx.stroke();
+    }
+    // ropes
+    ctx.strokeStyle="rgba(80,50,20,0.35)"; ctx.lineWidth=0.7*scale;
+    [[-8,10],[0,12],[8,10]].forEach(([ox,oy])=>{
+      ctx.beginPath(); ctx.moveTo(bx+ox*scale,by+oy*scale); ctx.lineTo(bx,by+22*scale); ctx.stroke();
+    });
+    // basket
+    ctx.fillStyle="rgba(160,110,50,0.7)";
+    ctx.beginPath(); ctx.roundRect(bx-7*scale,by+20*scale,14*scale,9*scale,2*scale); ctx.fill();
+    ctx.restore();
+  }
+  balloon(110,200,1.0,"#f08050","#c84020");
+  balloon(230,140,0.75,"#50a8e0","#2060b0");
+  balloon(310,240,0.6,"#80c848","#408020");
+  balloon(60,280,0.5,"#e0a030","#b06010");
+  // wispy mist streaks
+  ctx.strokeStyle="rgba(255,255,255,0.3)"; ctx.lineWidth=8;
+  for(let i=0;i<4;i++){
+    ctx.beginPath();
+    ctx.moveTo(rand(-20,100),rand(200,320));
+    ctx.bezierCurveTo(rand(80,200),rand(190,310),rand(200,320),rand(195,305),rand(300,420),rand(200,315));
+    ctx.stroke();
+  }
+  return false;
+}
+
+function drawSunflowerField(){
+  // warm golden sunflower field — painterly
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#7ab8e8"); g.addColorStop(0.45,"#b8d8f0"); g.addColorStop(0.6,"#f0e080"); g.addColorStop(1,"#c89820");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // sun
+  const sun=ctx.createRadialGradient(SIZE-60,55,8,SIZE-60,55,80);
+  sun.addColorStop(0,"rgba(255,240,100,0.9)"); sun.addColorStop(0.4,"rgba(255,220,60,0.4)"); sun.addColorStop(1,"rgba(255,220,60,0)");
+  ctx.fillStyle=sun; ctx.fillRect(0,0,SIZE,SIZE);
+  // stems
+  ctx.strokeStyle="#5a8020"; ctx.lineWidth=2.5;
+  const positions=[];
+  for(let i=0;i<22;i++){
+    const sx=rand(5,375),sh=rand(80,160);
+    positions.push({x:sx,y:SIZE-sh,h:sh});
+    ctx.beginPath(); ctx.moveTo(sx,SIZE); ctx.quadraticCurveTo(sx+rand(-15,15),SIZE-sh*0.5,sx+rand(-8,8),SIZE-sh); ctx.stroke();
+  }
+  // sunflowers
+  positions.forEach(({x,y})=>{
+    const pr=rand(10,17);
+    // petals
+    ctx.fillStyle=`rgba(240,${randInt(160,200)},20,${rand(0.7,1)})`;
+    for(let p=0;p<12;p++){
+      const a=(p/12)*Math.PI*2;
+      ctx.beginPath();
+      ctx.ellipse(x+Math.cos(a)*pr*1.1,y+Math.sin(a)*pr*1.1,pr*0.38,pr*0.22,a,0,Math.PI*2);
+      ctx.fill();
+    }
+    // centre
+    const cg=ctx.createRadialGradient(x,y,0,x,y,pr*0.55);
+    cg.addColorStop(0,"#3a1a00"); cg.addColorStop(1,"#6a3800");
+    ctx.fillStyle=cg; ctx.beginPath(); ctx.arc(x,y,pr*0.55,0,Math.PI*2); ctx.fill();
+    // pollen dots
+    ctx.fillStyle="rgba(220,180,30,0.6)";
+    for(let d=0;d<6;d++){
+      const da=(d/6)*Math.PI*2;
+      ctx.beginPath(); ctx.arc(x+Math.cos(da)*pr*0.3,y+Math.sin(da)*pr*0.3,1.2,0,Math.PI*2); ctx.fill();
+    }
+  });
+  // bees — tiny soft dashes
+  for(let i=0;i<6;i++){
+    const bx=rand(20,360),by=rand(80,280);
+    ctx.fillStyle="rgba(240,200,0,0.7)"; ctx.beginPath(); ctx.ellipse(bx,by,4,2.5,rand(-0.3,0.3),0,Math.PI*2); ctx.fill();
+    ctx.fillStyle="rgba(30,20,0,0.5)"; ctx.beginPath(); ctx.ellipse(bx,by,3,2,rand(-0.3,0.3),0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle="rgba(200,220,255,0.55)"; ctx.lineWidth=0.8;
+    ctx.beginPath(); ctx.ellipse(bx-3,by-2,3,1.5,0.4,0,Math.PI*2); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(bx+1,by-2,3,1.5,-0.2,0,Math.PI*2); ctx.stroke();
+  }
+  return false;
+}
+
+function drawCosyWindow(){
+  // interior warm morning — looking out from inside
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#1c1008"); g.addColorStop(1,"#2e1c0c");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // window opening — warm outside light
+  const wg=ctx.createRadialGradient(190,170,20,190,170,170);
+  wg.addColorStop(0,"rgba(255,230,160,0.95)"); wg.addColorStop(0.5,"rgba(200,180,100,0.6)"); wg.addColorStop(1,"rgba(100,80,30,0)");
+  ctx.fillStyle=wg; ctx.fillRect(0,0,SIZE,SIZE);
+  // window frame — rounded edges, warm wood
+  const wfg=ctx.createLinearGradient(55,40,55,320);
+  wfg.addColorStop(0,"#8a5828"); wfg.addColorStop(1,"#5a3010");
+  ctx.strokeStyle=wfg; ctx.lineWidth=12;
+  ctx.beginPath(); ctx.roundRect(60,45,260,270,6); ctx.stroke();
+  ctx.lineWidth=7;
+  ctx.beginPath(); ctx.moveTo(190,45); ctx.lineTo(190,315); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(60,180); ctx.lineTo(320,180); ctx.stroke();
+  // outside scene — soft morning
+  ctx.save(); ctx.beginPath(); ctx.roundRect(66,51,248,258,3); ctx.clip();
+  const og=ctx.createLinearGradient(0,51,0,309);
+  og.addColorStop(0,"#b8d8f8"); og.addColorStop(0.6,"#d8eef8"); og.addColorStop(1,"#c8e0c0");
+  ctx.fillStyle=og; ctx.fillRect(0,0,SIZE,SIZE);
+  // outside tree shapes — soft blobs
+  ctx.fillStyle="rgba(80,130,60,0.45)";
+  [[110,200,50,40],[200,220,70,55],[290,210,45,38],[150,240,60,45]].forEach(([tx,ty,rx,ry])=>{
+    ctx.beginPath(); ctx.ellipse(tx,ty,rx,ry,rand(-0.2,0.2),0,Math.PI*2); ctx.fill();
+  });
+  ctx.restore();
+  // warm glow spill onto room
+  const rg=ctx.createRadialGradient(190,315,10,190,315,180);
+  rg.addColorStop(0,"rgba(255,180,60,0.18)"); rg.addColorStop(1,"rgba(0,0,0,0)");
+  ctx.fillStyle=rg; ctx.fillRect(0,0,SIZE,SIZE);
+  // windowsill with mug
+  ctx.fillStyle="#6a3a10";
+  ctx.beginPath(); ctx.roundRect(40,315,300,22,3); ctx.fill();
+  // mug — simple warm shape
+  const mg=ctx.createLinearGradient(158,290,208,310);
+  mg.addColorStop(0,"#e8dcc8"); mg.addColorStop(1,"#c8b898");
+  ctx.fillStyle=mg;
+  ctx.beginPath(); ctx.moveTo(162,318); ctx.bezierCurveTo(160,300,160,292,165,290); ctx.lineTo(205,290); ctx.bezierCurveTo(210,292,210,300,208,318); ctx.closePath(); ctx.fill();
+  ctx.strokeStyle="#d0c0a0"; ctx.lineWidth=3;
+  ctx.beginPath(); ctx.arc(212,303,8,-0.6,0.6); ctx.stroke();
+  // steam wisps
+  ctx.strokeStyle="rgba(255,255,255,0.25)"; ctx.lineWidth=1.5;
+  [[180,288],[190,285],[200,288]].forEach(([sx,sy])=>{
+    ctx.beginPath(); ctx.moveTo(sx,sy); ctx.bezierCurveTo(sx+rand(-5,5),sy-10,sx+rand(-5,5),sy-18,sx+rand(-4,4),sy-26); ctx.stroke();
+  });
+  // book spine
+  ctx.fillStyle="#c04040";
+  ctx.beginPath(); ctx.roundRect(228,300,18,22,2); ctx.fill();
+  ctx.fillStyle="rgba(255,255,255,0.3)"; ctx.fillRect(231,303,12,1.5); ctx.fillRect(231,307,8,1.5);
+  return true;
+}
+
+function drawLavenderField(){
+  // hazy purple lavender field with warm sky
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#c8b8e8"); g.addColorStop(0.45,"#d8c8f0"); g.addColorStop(0.65,"#e8d8f8"); g.addColorStop(1,"#8860b0");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // hazy sun
+  const sun=ctx.createRadialGradient(240,80,5,240,80,90);
+  sun.addColorStop(0,"rgba(255,240,200,0.7)"); sun.addColorStop(1,"rgba(255,220,160,0)");
+  ctx.fillStyle=sun; ctx.fillRect(0,0,SIZE,SIZE);
+  // soft clouds
+  ctx.fillStyle="rgba(255,255,255,0.35)";
+  [[80,65,60,18],[200,50,80,22],[330,75,55,16]].forEach(([cx,cy,rx,ry])=>{
+    ctx.beginPath(); ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(cx-rx*0.3,cy+ry*0.5,rx*0.55,ry*0.7,0,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(cx+rx*0.3,cy+ry*0.5,rx*0.55,ry*0.7,0,0,Math.PI*2); ctx.fill();
+  });
+  // lavender rows — wavy bands getting narrower towards horizon
+  const rowCount=18;
+  for(let row=0;row<rowCount;row++){
+    const t=row/rowCount;
+    const rowY=SIZE*(0.45+t*0.55);
+    const rowH=Math.max(2,(1-t)*18+2);
+    const alpha=0.3+t*0.5;
+    const purple=`rgba(${100+row*3},${60+row},${180-row*3},${alpha})`;
+    ctx.fillStyle=purple;
+    ctx.beginPath();
+    ctx.moveTo(0,rowY);
+    for(let x=0;x<=SIZE;x+=8){
+      const wave=Math.sin(x*0.05+row*0.8)*2.5*(1-t);
+      ctx.lineTo(x,rowY+wave);
+    }
+    ctx.lineTo(SIZE,rowY+rowH); ctx.lineTo(0,rowY+rowH); ctx.fill();
+    // lavender spike tops — tiny soft blobs on each row
+    if(t>0.2){
+      for(let x=rand(4,12);x<SIZE;x+=rand(8,14)){
+        const spikeH=(1-t)*18+6;
+        const bloom=`rgba(${120+randInt(0,40)},${50+randInt(0,30)},${180+randInt(0,40)},${rand(0.4,0.85)})`;
+        ctx.fillStyle=bloom;
+        ctx.beginPath(); ctx.ellipse(x+rand(-2,2),rowY-spikeH*0.5,rand(2,4),rand(3,7),rand(-0.3,0.3),0,Math.PI*2); ctx.fill();
+      }
+    }
+  }
+  // distant tree line
+  ctx.fillStyle="rgba(80,50,120,0.3)";
+  ctx.beginPath(); ctx.moveTo(0,SIZE*0.5);
+  ctx.bezierCurveTo(80,SIZE*0.46,180,SIZE*0.49,SIZE,SIZE*0.47); ctx.lineTo(SIZE,SIZE*0.5); ctx.fill();
+  return false;
+}
+
 /* ═══════════════════════════════════════════
    EVENING SCENES
 ═══════════════════════════════════════════ */
+
 function drawStarryNight(){
   const g=ctx.createLinearGradient(0,0,0,SIZE);
   g.addColorStop(0,"#020510"); g.addColorStop(0.5,"#080e28"); g.addColorStop(1,"#120820");
@@ -650,8 +815,7 @@ function drawSleepyCloudsNight(){
   ctx.fillStyle="rgba(225,232,255,0.15)"; ctx.beginPath(); ctx.arc(100,90,40,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="#dce8ff"; ctx.beginPath(); ctx.arc(100,90,25,0,Math.PI*2); ctx.fill();
   function sleepyCloud(scx,scy,sc,al){
-    ctx.save(); ctx.globalAlpha=al;
-    ctx.fillStyle="#c8d4f0";
+    ctx.save(); ctx.globalAlpha=al; ctx.fillStyle="#c8d4f0";
     ctx.beginPath(); ctx.ellipse(scx,scy,55*sc,22*sc,0,0,Math.PI*2); ctx.fill();
     ctx.beginPath(); ctx.ellipse(scx-20*sc,scy-14*sc,28*sc,18*sc,-0.2,0,Math.PI*2); ctx.fill();
     ctx.beginPath(); ctx.ellipse(scx+10*sc,scy-16*sc,32*sc,20*sc,0.15,0,Math.PI*2); ctx.fill();
@@ -684,7 +848,7 @@ function drawDeepNightMoon(){
   ctx.fillStyle="rgba(200,192,240,0.35)"; ctx.beginPath(); ctx.arc(mx-9,my-6,6,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="rgba(200,192,240,0.25)"; ctx.beginPath(); ctx.arc(mx+10,my+8,4,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="rgba(140,130,170,0.18)";
-  for(let i=0;i<4;i++) ctx.beginPath(), ctx.ellipse(rand(20,360),rand(55,200),rand(50,100),rand(8,18),rand(-0.2,0.2),0,Math.PI*2), ctx.fill();
+  for(let i=0;i<4;i++) ctx.beginPath(),ctx.ellipse(rand(20,360),rand(55,200),rand(50,100),rand(8,18),rand(-0.2,0.2),0,Math.PI*2),ctx.fill();
   ctx.fillStyle="#0a0620"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(50,280,150,310,220,285); ctx.bezierCurveTo(280,262,330,285,SIZE,270); ctx.lineTo(SIZE,SIZE); ctx.fill();
   ctx.fillStyle="#060418"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(90,320,200,340,280,318); ctx.bezierCurveTo(320,305,350,318,SIZE,310); ctx.lineTo(SIZE,SIZE); ctx.fill();
   return true;
@@ -698,7 +862,7 @@ function drawSunset(){
   ctx.fillStyle="rgba(244,140,30,0.33)"; ctx.beginPath(); ctx.arc(190,285,54,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="#f4a030"; ctx.beginPath(); ctx.arc(190,285,29,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="rgba(240,180,100,0.16)";
-  for(let i=0;i<4;i++) ctx.beginPath(), ctx.ellipse(rand(30,350),rand(60,160),rand(45,92),rand(12,22),0,0,Math.PI*2), ctx.fill();
+  for(let i=0;i<4;i++) ctx.beginPath(),ctx.ellipse(rand(30,350),rand(60,160),rand(45,92),rand(12,22),0,0,Math.PI*2),ctx.fill();
   ctx.fillStyle="#060208"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(80,295,160,312,220,296); ctx.bezierCurveTo(270,282,320,298,SIZE,290); ctx.lineTo(SIZE,SIZE); ctx.fill();
   return true;
 }
@@ -741,7 +905,7 @@ function drawRainyWindow(){
     ctx.beginPath(); ctx.moveTo(rx,ry); ctx.lineTo(rx+rand(-3,3),ry+rl); ctx.stroke();
   }
   ctx.fillStyle="rgba(180,210,240,0.22)";
-  for(let i=0;i<22;i++) ctx.beginPath(), ctx.ellipse(rand(5,375),rand(5,375),rand(2,5),rand(3,8),rand(-0.2,0.2),0,Math.PI*2), ctx.fill();
+  for(let i=0;i<22;i++) ctx.beginPath(),ctx.ellipse(rand(5,375),rand(5,375),rand(2,5),rand(3,8),rand(-0.2,0.2),0,Math.PI*2),ctx.fill();
   ctx.strokeStyle="rgba(80,60,40,0.8)"; ctx.lineWidth=10; ctx.strokeRect(5,5,370,370);
   ctx.strokeStyle="rgba(80,60,40,0.6)"; ctx.lineWidth=6;
   ctx.beginPath(); ctx.moveTo(190,5); ctx.lineTo(190,375); ctx.stroke();
@@ -761,7 +925,7 @@ function drawPastelNight(){
   ctx.fillStyle="#ffe4ec"; ctx.beginPath(); ctx.arc(280,85,21,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="#2a1840"; ctx.beginPath(); ctx.arc(291,78,17,0,Math.PI*2); ctx.fill();
   ctx.fillStyle="rgba(180,160,210,0.22)";
-  for(let i=0;i<5;i++) ctx.beginPath(), ctx.ellipse(rand(20,360),rand(60,200),rand(45,90),rand(10,20),rand(-0.15,0.15),0,Math.PI*2), ctx.fill();
+  for(let i=0;i<5;i++) ctx.beginPath(),ctx.ellipse(rand(20,360),rand(60,200),rand(45,90),rand(10,20),rand(-0.15,0.15),0,Math.PI*2),ctx.fill();
   ctx.fillStyle="rgba(20,10,40,0.85)"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(70,300,170,325,250,305); ctx.bezierCurveTo(300,290,345,308,SIZE,298); ctx.lineTo(SIZE,SIZE); ctx.fill();
   return true;
 }
@@ -814,17 +978,243 @@ function drawFireflyNight(){
   return true;
 }
 
+/* NEW EVENING SCENES */
+
+function drawLanterns(){
+  // still dark water with lanterns floating and reflecting
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#020810"); g.addColorStop(0.5,"#08101e"); g.addColorStop(1,"#101828");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // stars
+  for(let i=0;i<70;i++){
+    ctx.fillStyle=`rgba(255,250,220,${rand(0.2,0.8)})`; ctx.beginPath(); ctx.arc(rand(0,SIZE),rand(0,SIZE*0.45),rand(0.3,1.4),0,Math.PI*2); ctx.fill();
+  }
+  // water — dark reflective plane
+  const wg=ctx.createLinearGradient(0,SIZE*0.52,0,SIZE);
+  wg.addColorStop(0,"#0a1420"); wg.addColorStop(1,"#060e18");
+  ctx.fillStyle=wg; ctx.fillRect(0,SIZE*0.52,SIZE,SIZE*0.48);
+  // horizon shimmer
+  ctx.strokeStyle="rgba(255,200,100,0.08)"; ctx.lineWidth=1;
+  for(let i=0;i<6;i++){
+    ctx.beginPath(); ctx.moveTo(rand(0,SIZE),SIZE*0.52+i*8); ctx.lineTo(rand(0,SIZE),SIZE*0.52+i*8); ctx.stroke();
+  }
+  // lanterns
+  function lantern(lx,ly,scale,hue){
+    const bright=`hsla(${hue},90%,70%,0.95)`;
+    const dim=`hsla(${hue},80%,45%,0.7)`;
+    // glow
+    const lg=ctx.createRadialGradient(lx,ly,2*scale,lx,ly,40*scale);
+    lg.addColorStop(0,`hsla(${hue},90%,70%,0.35)`); lg.addColorStop(1,"rgba(0,0,0,0)");
+    ctx.fillStyle=lg; ctx.fillRect(lx-40*scale,ly-40*scale,80*scale,80*scale);
+    // body — soft lantern blob
+    const bg=ctx.createRadialGradient(lx,ly-4*scale,1*scale,lx,ly,16*scale);
+    bg.addColorStop(0,bright); bg.addColorStop(1,dim);
+    ctx.fillStyle=bg;
+    ctx.beginPath();
+    ctx.moveTo(lx,ly-18*scale);
+    ctx.bezierCurveTo(lx+13*scale,ly-18*scale,lx+16*scale,ly-4*scale,lx+14*scale,ly+8*scale);
+    ctx.bezierCurveTo(lx+10*scale,ly+16*scale,lx-10*scale,ly+16*scale,lx-14*scale,ly+8*scale);
+    ctx.bezierCurveTo(lx-16*scale,ly-4*scale,lx-13*scale,ly-18*scale,lx,ly-18*scale);
+    ctx.fill();
+    // top cap
+    ctx.fillStyle=`hsla(${hue},60%,40%,0.8)`;
+    ctx.beginPath(); ctx.ellipse(lx,ly-18*scale,6*scale,3*scale,0,0,Math.PI*2); ctx.fill();
+    // string
+    ctx.strokeStyle=`rgba(180,150,80,0.4)`; ctx.lineWidth=0.8*scale;
+    ctx.beginPath(); ctx.moveTo(lx,ly-21*scale); ctx.lineTo(lx,ly-28*scale); ctx.stroke();
+    // water reflection — blurry elongated glow below horizon
+    const ry=SIZE-(ly-SIZE*0.52);
+    const rg2=ctx.createRadialGradient(lx,ry,1,lx,ry+10*scale,25*scale);
+    rg2.addColorStop(0,`hsla(${hue},90%,60%,0.25)`); rg2.addColorStop(1,"rgba(0,0,0,0)");
+    ctx.fillStyle=rg2; ctx.beginPath(); ctx.ellipse(lx,ry+8*scale,10*scale,22*scale,0,0,Math.PI*2); ctx.fill();
+  }
+  lantern(80,200,1.1,35);
+  lantern(170,160,0.9,28);
+  lantern(260,190,1.0,42);
+  lantern(330,230,0.75,30);
+  lantern(120,280,0.65,38);
+  lantern(290,310,0.7,25);
+  // distant shore line
+  ctx.fillStyle="rgba(5,10,20,0.9)"; ctx.beginPath(); ctx.moveTo(0,SIZE*0.52); ctx.bezierCurveTo(90,SIZE*0.5,200,SIZE*0.53,SIZE,SIZE*0.51); ctx.lineTo(SIZE,SIZE*0.52); ctx.fill();
+  return true;
+}
+
+function drawCampfire(){
+  // warm dark night with a glowing campfire
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#020304"); g.addColorStop(0.6,"#080604"); g.addColorStop(1,"#100800");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // stars
+  for(let i=0;i<80;i++){
+    ctx.fillStyle=`rgba(255,250,220,${rand(0.15,0.75)})`; ctx.beginPath(); ctx.arc(rand(0,SIZE),rand(0,SIZE*0.55),rand(0.2,1.5),0,Math.PI*2); ctx.fill();
+  }
+  const cx=190,cy=280;
+  // ground glow — big warm radius
+  const gg=ctx.createRadialGradient(cx,cy,5,cx,cy,180);
+  gg.addColorStop(0,"rgba(255,120,20,0.22)"); gg.addColorStop(0.4,"rgba(200,80,10,0.1)"); gg.addColorStop(1,"rgba(0,0,0,0)");
+  ctx.fillStyle=gg; ctx.fillRect(0,0,SIZE,SIZE);
+  // logs — two crossed organic shapes
+  ctx.save(); ctx.translate(cx,cy+20);
+  [[0.3,0,60,8],[-0.3,0,60,8]].forEach(([angle,ox,len,w])=>{
+    ctx.save(); ctx.rotate(angle);
+    const lg=ctx.createLinearGradient(-len,0,len,0);
+    lg.addColorStop(0,"#3a1a08"); lg.addColorStop(0.5,"#6a3010"); lg.addColorStop(1,"#2a1004");
+    ctx.fillStyle=lg;
+    ctx.beginPath(); ctx.ellipse(ox,0,len,w,0,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  });
+  ctx.restore();
+  // ember bed
+  const eb=ctx.createRadialGradient(cx,cy+14,2,cx,cy+14,28);
+  eb.addColorStop(0,"rgba(255,160,20,0.9)"); eb.addColorStop(0.5,"rgba(200,60,0,0.6)"); eb.addColorStop(1,"rgba(100,20,0,0)");
+  ctx.fillStyle=eb; ctx.beginPath(); ctx.ellipse(cx,cy+14,28,10,0,0,Math.PI*2); ctx.fill();
+  // flames — layered soft blobs
+  function flame(fx,fy,w,h,col,alpha){
+    ctx.save(); ctx.globalAlpha=alpha;
+    const fg=ctx.createRadialGradient(fx,fy+h*0.3,1,fx,fy,h);
+    fg.addColorStop(0,"rgba(255,240,100,0.9)"); fg.addColorStop(0.4,col); fg.addColorStop(1,"rgba(0,0,0,0)");
+    ctx.fillStyle=fg;
+    ctx.beginPath();
+    ctx.moveTo(fx,fy);
+    ctx.bezierCurveTo(fx+w,fy+h*0.3,fx+w*0.6,fy+h*0.75,fx,fy+h);
+    ctx.bezierCurveTo(fx-w*0.6,fy+h*0.75,fx-w,fy+h*0.3,fx,fy);
+    ctx.fill();
+    ctx.restore();
+  }
+  flame(cx,cy-40,30,55,"rgba(255,80,0,0.7)",0.9);
+  flame(cx-10,cy-25,20,38,"rgba(255,140,0,0.6)",0.7);
+  flame(cx+12,cy-20,18,35,"rgba(255,100,0,0.65)",0.65);
+  flame(cx,cy-55,15,30,"rgba(255,220,50,0.5)",0.5);
+  // sparks
+  for(let i=0;i<20;i++){
+    const sx=cx+rand(-40,40),sy=cy-rand(20,120);
+    ctx.fillStyle=`rgba(255,${randInt(140,220)},${randInt(0,60)},${rand(0.4,0.95)})`;
+    ctx.beginPath(); ctx.arc(sx,sy,rand(0.8,2.2),0,Math.PI*2); ctx.fill();
+  }
+  // dark ground
+  ctx.fillStyle="#050302"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(80,SIZE-40,200,SIZE-30,SIZE,SIZE-35); ctx.lineTo(SIZE,SIZE); ctx.fill();
+  // tree silhouettes either side
+  ctx.fillStyle="#020200";
+  [[30,SIZE-80,8,120],[60,SIZE-60,6,90],[SIZE-40,SIZE-90,8,130],[SIZE-70,SIZE-65,6,85]].forEach(([tx,ty,tw,th])=>{
+    ctx.beginPath(); ctx.moveTo(tx,ty+th); ctx.bezierCurveTo(tx-tw,ty+th*0.5,tx-tw*0.5,ty,tx,ty); ctx.bezierCurveTo(tx+tw*0.5,ty,tx+tw,ty+th*0.5,tx,ty+th); ctx.fill();
+  });
+  return true;
+}
+
+function drawSnowMountainsNight(){
+  // northern lights over snowy mountain range — all soft gradients no hard edges
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#010608"); g.addColorStop(0.4,"#020e14"); g.addColorStop(1,"#040c10");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // stars
+  for(let i=0;i<90;i++){
+    ctx.fillStyle=`rgba(220,240,255,${rand(0.15,0.75)})`; ctx.beginPath(); ctx.arc(rand(0,SIZE),rand(0,SIZE*0.6),rand(0.2,1.4),0,Math.PI*2); ctx.fill();
+  }
+  // northern lights — soft wide bands
+  const nlColors=[
+    "rgba(0,200,120,0.09)","rgba(0,180,160,0.08)","rgba(40,220,140,0.07)",
+    "rgba(0,160,200,0.07)","rgba(80,240,160,0.06)"
+  ];
+  for(let b=0;b<6;b++){
+    ctx.fillStyle=nlColors[b%nlColors.length];
+    ctx.beginPath();
+    const by=rand(40,200);
+    ctx.moveTo(0,by+rand(-15,15));
+    for(let x=0;x<=SIZE;x+=20){
+      ctx.lineTo(x,by+Math.sin(x*0.025+b*1.2)*rand(20,45)+Math.sin(x*0.06+b)*rand(5,12));
+    }
+    const bandH=rand(30,70);
+    ctx.lineTo(SIZE,by+bandH); ctx.lineTo(0,by+bandH); ctx.closePath(); ctx.fill();
+  }
+  // moon
+  ctx.fillStyle="rgba(220,235,255,0.06)"; ctx.beginPath(); ctx.arc(300,55,48,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle="rgba(228,240,255,0.15)"; ctx.beginPath(); ctx.arc(300,55,30,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle="#eef4ff"; ctx.beginPath(); ctx.arc(300,55,18,0,Math.PI*2); ctx.fill();
+  // mountain range — layered silhouettes, no hard triangles — use bezier peaks
+  function mountainRange(yBase,col,peaks){
+    ctx.fillStyle=col; ctx.beginPath(); ctx.moveTo(0,SIZE);
+    ctx.lineTo(0,yBase+rand(20,40));
+    peaks.forEach(([px,py,spread])=>{
+      ctx.bezierCurveTo(px-spread,yBase+rand(10,30),px-spread*0.3,py+rand(0,10),px,py);
+      ctx.bezierCurveTo(px+spread*0.3,py+rand(0,10),px+spread,yBase+rand(10,30),px+spread*1.2,yBase+rand(15,35));
+    });
+    ctx.lineTo(SIZE,yBase+rand(20,40));
+    ctx.lineTo(SIZE,SIZE); ctx.fill();
+  }
+  mountainRange(260,"rgba(15,25,35,0.85)",[[80,200,60],[190,180,80],[310,210,65],[420,195,55]]);
+  mountainRange(295,"rgba(20,35,45,0.9)",[[50,240,50],[150,220,70],[270,235,60],[360,225,65]]);
+  // snow caps — soft white blobs on peaks
+  [[80,200],[190,180],[310,210]].forEach(([px,py])=>{
+    ctx.fillStyle="rgba(220,235,255,0.35)";
+    ctx.beginPath(); ctx.ellipse(px,py+8,rand(18,28),rand(8,14),0,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle="rgba(240,248,255,0.5)";
+    ctx.beginPath(); ctx.ellipse(px,py+4,rand(10,16),rand(5,9),0,0,Math.PI*2); ctx.fill();
+  });
+  // snow ground
+  ctx.fillStyle="rgba(180,210,240,0.18)"; ctx.beginPath(); ctx.moveTo(0,SIZE); ctx.bezierCurveTo(80,SIZE-15,200,SIZE-10,SIZE,SIZE-12); ctx.lineTo(SIZE,SIZE); ctx.fill();
+  return true;
+}
+
+function drawOceanMoonlight(){
+  // deep ocean at night with moon path on water
+  const g=ctx.createLinearGradient(0,0,0,SIZE);
+  g.addColorStop(0,"#010510"); g.addColorStop(0.45,"#030c20"); g.addColorStop(1,"#051020");
+  ctx.fillStyle=g; ctx.fillRect(0,0,SIZE,SIZE);
+  // stars
+  for(let i=0;i<90;i++){
+    ctx.fillStyle=`rgba(255,252,230,${rand(0.2,0.85)})`; ctx.beginPath(); ctx.arc(rand(0,SIZE),rand(0,SIZE*0.48),rand(0.3,1.6),0,Math.PI*2); ctx.fill();
+  }
+  // moon
+  const mx=190, my=75;
+  ctx.fillStyle="rgba(230,235,255,0.06)"; ctx.beginPath(); ctx.arc(mx,my,65,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle="rgba(235,238,255,0.14)"; ctx.beginPath(); ctx.arc(mx,my,42,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle="#f0f2ff"; ctx.beginPath(); ctx.arc(mx,my,24,0,Math.PI*2); ctx.fill();
+  // horizon
+  const hz=SIZE*0.5;
+  ctx.fillStyle="rgba(5,15,30,0.5)"; ctx.fillRect(0,hz-1,SIZE,2);
+  // ocean — layered dark waves
+  for(let row=0;row<12;row++){
+    const t=row/12;
+    const wy=hz+t*(SIZE-hz);
+    const wAlpha=0.06+t*0.08;
+    ctx.strokeStyle=`rgba(80,140,200,${wAlpha})`; ctx.lineWidth=1+t*1.5;
+    ctx.beginPath(); ctx.moveTo(0,wy);
+    for(let x=0;x<=SIZE;x+=15){
+      ctx.lineTo(x,wy+Math.sin(x*0.04+row*0.7)*rand(2,5)*(1-t*0.5));
+    }
+    ctx.stroke();
+  }
+  // moonpath on water — shimmering column
+  const mp=ctx.createLinearGradient(mx,hz,mx,SIZE);
+  mp.addColorStop(0,"rgba(200,210,255,0.22)"); mp.addColorStop(0.5,"rgba(180,195,255,0.1)"); mp.addColorStop(1,"rgba(150,170,220,0.03)");
+  ctx.fillStyle=mp;
+  ctx.beginPath();
+  ctx.moveTo(mx-12,hz); ctx.bezierCurveTo(mx-30,hz+SIZE*0.2,mx-55,hz+SIZE*0.4,mx-70,SIZE);
+  ctx.lineTo(mx+70,SIZE); ctx.bezierCurveTo(mx+55,hz+SIZE*0.4,mx+30,hz+SIZE*0.2,mx+12,hz);
+  ctx.closePath(); ctx.fill();
+  // sparkle dashes on moonpath
+  ctx.strokeStyle="rgba(220,230,255,0.4)"; ctx.lineWidth=1;
+  for(let i=0;i<18;i++){
+    const t=rand(0.05,0.95);
+    const sx=mx+rand(-60*t,60*t),sy=hz+t*(SIZE-hz)*0.95;
+    ctx.beginPath(); ctx.moveTo(sx-rand(3,8),sy); ctx.lineTo(sx+rand(3,8),sy); ctx.stroke();
+  }
+  // soft distant land silhouette
+  ctx.fillStyle="rgba(2,8,18,0.85)"; ctx.beginPath(); ctx.moveTo(0,hz+2); ctx.bezierCurveTo(60,hz-8,140,hz-5,SIZE,hz-3); ctx.lineTo(SIZE,hz+2); ctx.fill();
+  return true;
+}
+
 /* ═══════════════════════════════════════════
    SCENE MAPS
 ═══════════════════════════════════════════ */
 const sceneMap = {
-  morning: [drawSunrise, drawPastelDawn, drawMorningSea, drawFlowerMeadow, drawMistyForest, drawTeaCup, drawGoldenWheat, drawCherryBlossom, drawSnowflakes, drawRaindrops],
-  day:     [drawFlowerMeadow, drawMistyForest, drawTeaCup, drawRainyWindow, drawMorningSea, drawGoldenWheat, drawCherryBlossom, drawSnowflakes, drawRaindrops],
-  evening: [drawStarryNight, drawSleepyCloudsNight, drawDeepNightMoon, drawSunset, drawCandlelight, drawRainyWindow, drawPastelNight, drawAuroraNight, drawFireflyNight]
+  morning: [drawSunrise,drawPastelDawn,drawMorningSea,drawFlowerMeadow,drawMistyForest,drawTeaCup,drawGoldenWheat,drawCherryBlossom,drawSnowflakes,drawRaindrops,drawHotAirBalloons,drawSunflowerField,drawCosyWindow,drawLavenderField],
+  day:     [drawFlowerMeadow,drawMistyForest,drawTeaCup,drawRainyWindow,drawMorningSea,drawGoldenWheat,drawCherryBlossom,drawSnowflakes,drawRaindrops,drawHotAirBalloons,drawSunflowerField,drawCosyWindow,drawLavenderField],
+  evening: [drawStarryNight,drawSleepyCloudsNight,drawDeepNightMoon,drawSunset,drawCandlelight,drawRainyWindow,drawPastelNight,drawAuroraNight,drawFireflyNight,drawLanterns,drawCampfire,drawSnowMountainsNight,drawOceanMoonlight]
 };
 
 /* ═══════════════════════════════════════════
-   GENERATE & DOWNLOAD
+   GENERATE
 ═══════════════════════════════════════════ */
 function generate(type){
   currentType=type;
@@ -839,6 +1229,30 @@ function generate(type){
   requestAnimationFrame(()=>{ requestAnimationFrame(()=>{ wrap.classList.add("shown"); }); });
 }
 
+/* ═══════════════════════════════════════════
+   SHARE — Android Web Share API
+   falls back to download if not supported
+═══════════════════════════════════════════ */
+async function shareCard(){
+  canvas.toBlob(async (blob)=>{
+    if(navigator.share && navigator.canShare && navigator.canShare({files:[new File([blob],"card.png",{type:"image/png"})]})){
+      try {
+        await navigator.share({
+          files:[new File([blob],"card.png",{type:"image/png"})],
+          title:"A little love for you"
+        });
+      } catch(e){
+        if(e.name!=="AbortError") downloadCard();
+      }
+    } else {
+      downloadCard();
+    }
+  },"image/png");
+}
+
+/* ═══════════════════════════════════════════
+   DOWNLOAD
+═══════════════════════════════════════════ */
 function downloadCard(){
   const link=document.createElement("a");
   link.download="card.png";
